@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, MapPin, CircleCheck, Building, Users, Award, DollarSign, Percent, Heart, Waves, UtensilsCrossed, Dumbbell, Gamepad, Umbrella, ShieldCheck, Phone, Mail } from 'lucide-react';
+import { ArrowRight, MapPin, CircleCheck, Building, Users, Award, DollarSign, Percent, Heart, Waves, UtensilsCrossed, Dumbbell, Gamepad, Umbrella, ShieldCheck, Phone, Mail, MessageCircle } from 'lucide-react';
 import SectionTitle from '@/components/SectionTitle';
 import FeatureCard from '@/components/FeatureCard';
 import ContactForm from '@/components/ContactForm';
@@ -11,6 +11,10 @@ import InfoCard from '@/components/InfoCard';
 import { Card } from '@/components/ui/card';
 
 const Home = () => {
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/918599936363', '_blank');
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -36,9 +40,9 @@ const Home = () => {
             <Link to="/cottages" className="btn-secondary flex items-center justify-center gap-2">
               Discover Luxury Cottages <ArrowRight size={16} />
             </Link>
-            <Link to="/resort" className="btn-outline flex items-center justify-center gap-2">
-              Explore the Resort <ArrowRight size={16} />
-            </Link>
+            <button onClick={handleWhatsAppClick} className="btn-outline flex items-center justify-center gap-2">
+              Chat on WhatsApp <MessageCircle size={16} />
+            </button>
           </div>
         </div>
       </section>
