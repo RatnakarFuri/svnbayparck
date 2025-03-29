@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ArrowRight, MapPin, CircleCheck, Building, Users, Award, DollarSign, Percent, Heart, SwimmingPool, Restaurant, OpenGym, Gamepad, Umbrella } from 'lucide-react';
+import { ArrowRight, MapPin, CircleCheck, Building, Users, Award, DollarSign, Percent, Heart, Waves, UtensilsCrossed, Dumbbell, Gamepad, Umbrella, ShieldCheck, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SectionTitle from '@/components/SectionTitle';
 import FeatureCard from '@/components/FeatureCard';
@@ -57,7 +56,7 @@ const Home = () => {
             </div>
             
             <div className="bg-white p-8 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow">
-              <Shield size={48} className="text-primary mx-auto mb-4" />
+              <ShieldCheck size={48} className="text-primary mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">RERA Approved</h3>
               <p>AP RERA NO: P01070381701</p>
             </div>
@@ -292,17 +291,17 @@ const Home = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             <div className="text-center">
-              <SwimmingPool size={48} className="mx-auto text-primary mb-3" />
+              <Waves size={48} className="mx-auto text-primary mb-3" />
               <h3 className="font-medium">Swimming Pool</h3>
             </div>
             
             <div className="text-center">
-              <Restaurant size={48} className="mx-auto text-primary mb-3" />
+              <UtensilsCrossed size={48} className="mx-auto text-primary mb-3" />
               <h3 className="font-medium">Restaurant</h3>
             </div>
             
             <div className="text-center">
-              <OpenGym size={48} className="mx-auto text-primary mb-3" />
+              <Dumbbell size={48} className="mx-auto text-primary mb-3" />
               <h3 className="font-medium">Open Gym</h3>
             </div>
             
