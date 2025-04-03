@@ -232,7 +232,7 @@ const Home = () => {
           
           <div className="grid grid-cols-2 gap-4">
             <div className="rounded-lg overflow-hidden shadow-sm">
-              <img alt="Luxury Cottage Exterior" className="object-cover w-full h-full" src="/lovable-uploads/bc62ff75-75e1-4272-9f65-e54c80fdfc7c.jpg" />
+              <img alt="Luxury Cottage Exterior" className="object-cover w-full h-full" src="/lovable-uploads/ec3b7443-75db-497f-a243-aa53a66564fa.jpg" />
             </div>
             <div className="rounded-lg overflow-hidden shadow-sm mt-4">
               <img alt="Luxury Cottage Interior" className="object-cover w-full h-full" src="/lovable-uploads/7f971d5c-d372-46b9-b66a-bf2502510d87.jpg" />
