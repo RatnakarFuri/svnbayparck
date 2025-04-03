@@ -157,9 +157,7 @@ const Home = () => {
           </div>
           
           <div className="order-1 md:order-2">
-            <blockquote className="text-2xl font-light text-gray-500 mb-6 italic leading-relaxed">
-              "Pack your favorite books and coffee...weekends here seem surreal."
-            </blockquote>
+            <blockquote className="text-2xl font-light text-gray-500 mb-6 italic leading-relaxed">"A Beachfront Plot, A Lifetime of Views."</blockquote>
             <p className="text-gray-600 mb-6 text-base leading-relaxed">
               Exclusive beachfront plots with top-notch amenities make weekends here seem surreal. These pre-demarcated plots come in a range of convenient, practical areas, spanning from 200 to 267 sq yds. If you feel the need for more space, you can always choose more than one plot.
             </p>
