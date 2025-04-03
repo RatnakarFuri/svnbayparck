@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, MapPin, CircleCheck, Building, Users, Award, DollarSign, Percent, Heart, Waves, UtensilsCrossed, Dumbbell, Gamepad, Umbrella, ShieldCheck, Phone, Mail, MessageCircle } from 'lucide-react';
@@ -9,31 +8,29 @@ import AmenityIcon from '@/components/AmenityIcon';
 import Section from '@/components/Section';
 import InfoCard from '@/components/InfoCard';
 import { Card } from '@/components/ui/card';
-
 const Home = () => {
   const handleWhatsAppClick = () => {
     window.open('https://wa.me/918599936363', '_blank');
   };
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
-        className="relative h-screen flex items-center justify-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("/public/lovable-uploads/6e3e46c5-ac95-4a9b-ae3f-d2a2b36e7f90.png")`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      >
+      <section className="relative h-screen flex items-center justify-center" style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("/public/lovable-uploads/6e3e46c5-ac95-4a9b-ae3f-d2a2b36e7f90.png")`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
         <div className="container-custom text-center text-white z-10">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium mb-4 leading-tight animate-fade-in max-w-4xl mx-auto">
+          <h1 className="text-3xl md:text-5xl font-medium mb-4 leading-tight animate-fade-in max-w-4xl mx-auto lg:text-5xl">
             Beachfront Plots & Villas | Luxury Resort
           </h1>
-          <p className="text-lg md:text-2xl lg:text-3xl font-calligraphy mb-6 animate-fade-in" style={{animationDelay: '0.3s'}}>
+          <p style={{
+          animationDelay: '0.3s'
+        }} className="text-lg md:text-2xl font-calligraphy mb-6 animate-fade-in font-medium lg:text-5xl">
             Your life by the sea.
           </p>
-          <div className="flex flex-col md:flex-row justify-center gap-3 animate-fade-in" style={{animationDelay: '0.6s'}}>
+          <div className="flex flex-col md:flex-row justify-center gap-3 animate-fade-in" style={{
+          animationDelay: '0.6s'
+        }}>
             <Link to="/plots" className="btn-primary flex items-center justify-center gap-2">
               Explore Beachfront Plots <ArrowRight size={16} />
             </Link>
@@ -72,10 +69,7 @@ const Home = () => {
       
       {/* About Section */}
       <Section background="white">
-        <SectionTitle 
-          title="About SVN BAY PARCK" 
-          subtitle="Experience luxury beachfront living in a world-class gated community"
-        />
+        <SectionTitle title="About SVN BAY PARCK" subtitle="Experience luxury beachfront living in a world-class gated community" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
@@ -87,16 +81,8 @@ const Home = () => {
             </p>
             
             <div className="flex flex-wrap gap-4 mt-8">
-              <InfoCard 
-                icon={<Building size={18} />}
-                title="Beach Plots"
-                value="206"
-              />
-              <InfoCard 
-                icon={<MapPin size={18} />}
-                title="Total Area"
-                value="40 Acres"
-              />
+              <InfoCard icon={<Building size={18} />} title="Beach Plots" value="206" />
+              <InfoCard icon={<MapPin size={18} />} title="Total Area" value="40 Acres" />
             </div>
             
             <div className="mt-8">
@@ -108,11 +94,7 @@ const Home = () => {
           
           <div className="relative">
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800&auto=format&fit=crop&q=80" 
-                alt="SVN BAY PARCK Beachfront View" 
-                className="object-cover w-full aspect-[4/3]"
-              />
+              <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800&auto=format&fit=crop&q=80" alt="SVN BAY PARCK Beachfront View" className="object-cover w-full aspect-[4/3]" />
             </div>
             <div className="absolute -bottom-4 -left-4 bg-primary text-white p-3 rounded-lg shadow-md">
               <p className="text-base font-medium">206</p>
@@ -128,10 +110,7 @@ const Home = () => {
       
       {/* Beachfront Plots Section */}
       <Section background="light">
-        <SectionTitle 
-          title="Beach Front Plots" 
-          subtitle="Premium beachfront plots with convenient sizes and luxury amenities"
-        />
+        <SectionTitle title="Beach Front Plots" subtitle="Premium beachfront plots with convenient sizes and luxury amenities" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
@@ -195,10 +174,7 @@ const Home = () => {
       
       {/* Luxury Cottages Section */}
       <Section background="white">
-        <SectionTitle 
-          title="Premium Cottages" 
-          subtitle="Contemporary-styled luxury cottages with panoramic sea views"
-        />
+        <SectionTitle title="Premium Cottages" subtitle="Contemporary-styled luxury cottages with panoramic sea views" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
@@ -256,32 +232,16 @@ const Home = () => {
           
           <div className="grid grid-cols-2 gap-4">
             <div className="rounded-lg overflow-hidden shadow-sm">
-              <img 
-                src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=500&auto=format&fit=crop&q=80" 
-                alt="Luxury Cottage Exterior" 
-                className="object-cover w-full h-full"
-              />
+              <img src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=500&auto=format&fit=crop&q=80" alt="Luxury Cottage Exterior" className="object-cover w-full h-full" />
             </div>
             <div className="rounded-lg overflow-hidden shadow-sm mt-4">
-              <img 
-                src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=500&auto=format&fit=crop&q=80" 
-                alt="Luxury Cottage Interior" 
-                className="object-cover w-full h-full"
-              />
+              <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=500&auto=format&fit=crop&q=80" alt="Luxury Cottage Interior" className="object-cover w-full h-full" />
             </div>
             <div className="rounded-lg overflow-hidden shadow-sm">
-              <img 
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&auto=format&fit=crop&q=80" 
-                alt="Cottage View" 
-                className="object-cover w-full h-full"
-              />
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=500&auto=format&fit=crop&q=80" alt="Cottage View" className="object-cover w-full h-full" />
             </div>
             <div className="rounded-lg overflow-hidden shadow-sm mt-4">
-              <img 
-                src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=500&auto=format&fit=crop&q=80" 
-                alt="Beach View" 
-                className="object-cover w-full h-full"
-              />
+              <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=500&auto=format&fit=crop&q=80" alt="Beach View" className="object-cover w-full h-full" />
             </div>
           </div>
         </div>
@@ -289,11 +249,7 @@ const Home = () => {
       
       {/* Resort Amenities */}
       <Section background="light">
-        <SectionTitle 
-          title="Luxury Resort" 
-          subtitle="A 9 acre luxury resort with premium amenities for all age groups and families"
-          align="center"
-        />
+        <SectionTitle title="Luxury Resort" subtitle="A 9 acre luxury resort with premium amenities for all age groups and families" align="center" />
         
         <p className="text-gray-600 text-center max-w-3xl mx-auto mb-10 text-base">
           The resort is a key part of the Bay Parck lifestyle, offering world-class hospitality and a wide range of amenities. Owning a cottage or plot gives you access to all resort facilities, allowing you to enjoy a vacation experience whenever you visit.
@@ -360,10 +316,7 @@ const Home = () => {
       
       {/* Location Advantages */}
       <Section background="white">
-        <SectionTitle 
-          title="The Designs of Effortless Access" 
-          subtitle="Strategically located for convenience and future appreciation"
-        />
+        <SectionTitle title="The Designs of Effortless Access" subtitle="Strategically located for convenience and future appreciation" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
@@ -427,30 +380,16 @@ const Home = () => {
           </div>
           
           <div className="h-[500px] rounded-lg overflow-hidden shadow-md">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241412.29508914096!2d83.9412698!3d18.2957761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c522aaf9d6fbd%3A0xc6203e31e0be1c!2sSrikakulam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1701347218970!5m2!1sen!2sin" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Map showing location of SVN Bay Parck"
-              className="rounded-lg"
-            ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241412.29508914096!2d83.9412698!3d18.2957761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3c522aaf9d6fbd%3A0xc6203e31e0be1c!2sSrikakulam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1701347218970!5m2!1sen!2sin" width="100%" height="100%" style={{
+            border: 0
+          }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Map showing location of SVN Bay Parck" className="rounded-lg"></iframe>
           </div>
         </div>
       </Section>
       
       {/* Free Membership Benefits */}
       <Section background="primary">
-        <SectionTitle 
-          title="FREE RESORT MEMBERSHIP" 
-          subtitle="Exclusive benefits for plot and cottage owners"
-          align="center"
-          titleClassName="text-white"
-          subtitleClassName="text-white/80"
-        />
+        <SectionTitle title="FREE RESORT MEMBERSHIP" subtitle="Exclusive benefits for plot and cottage owners" align="center" titleClassName="text-white" subtitleClassName="text-white/80" />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
@@ -526,48 +465,20 @@ const Home = () => {
       
       {/* Why Bay Parck */}
       <Section background="white">
-        <SectionTitle 
-          title="TICK ALL THE BOXES FOR PERFECT INVESTMENT" 
-          subtitle="Why SVN BAY PARCK is your ideal investment choice"
-          align="center"
-        />
+        <SectionTitle title="TICK ALL THE BOXES FOR PERFECT INVESTMENT" subtitle="Why SVN BAY PARCK is your ideal investment choice" align="center" />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <FeatureCard
-            icon={<DollarSign size={28} />}
-            title="High Returns / ROI"
-            description="Coastal properties historically provide excellent return on investment with appreciating values over time."
-          />
+          <FeatureCard icon={<DollarSign size={28} />} title="High Returns / ROI" description="Coastal properties historically provide excellent return on investment with appreciating values over time." />
           
-          <FeatureCard
-            icon={<Percent size={28} />}
-            title="Resale Value"
-            description="Prime beachfront location ensures strong resale value and future appreciation potential."
-          />
+          <FeatureCard icon={<Percent size={28} />} title="Resale Value" description="Prime beachfront location ensures strong resale value and future appreciation potential." />
           
-          <FeatureCard
-            icon={<MapPin size={28} />}
-            title="Beachfront Property"
-            description="Rare opportunity to own property directly on the beach with unobstructed sea views."
-          />
+          <FeatureCard icon={<MapPin size={28} />} title="Beachfront Property" description="Rare opportunity to own property directly on the beach with unobstructed sea views." />
           
-          <FeatureCard
-            icon={<Building size={28} />}
-            title="Flexible Plot Sizes"
-            description="Wallet-friendly plot sizes with different property options offering a wealth of choices."
-          />
+          <FeatureCard icon={<Building size={28} />} title="Flexible Plot Sizes" description="Wallet-friendly plot sizes with different property options offering a wealth of choices." />
           
-          <FeatureCard
-            icon={<Award size={28} />}
-            title="Superb Facilities"
-            description="A 9-acre luxury resort with premium cottages offers amenities for all age groups."
-          />
+          <FeatureCard icon={<Award size={28} />} title="Superb Facilities" description="A 9-acre luxury resort with premium cottages offers amenities for all age groups." />
           
-          <FeatureCard
-            icon={<Heart size={28} />}
-            title="Unique Landscape"
-            description="Designed with location in mind, Bay Parck benefits from a wonderful shoreline and natural beauty."
-          />
+          <FeatureCard icon={<Heart size={28} />} title="Unique Landscape" description="Designed with location in mind, Bay Parck benefits from a wonderful shoreline and natural beauty." />
         </div>
         
         <div className="mt-10 glass-card p-6 max-w-3xl mx-auto">
@@ -580,10 +491,7 @@ const Home = () => {
       
       {/* Contact Section */}
       <Section background="light">
-        <SectionTitle 
-          title="Contact Us" 
-          subtitle="Reach out to learn more about SVN BAY PARCK"
-        />
+        <SectionTitle title="Contact Us" subtitle="Reach out to learn more about SVN BAY PARCK" />
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
@@ -631,8 +539,6 @@ const Home = () => {
           <ContactForm />
         </div>
       </Section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
