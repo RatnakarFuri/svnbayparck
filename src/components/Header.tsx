@@ -14,7 +14,7 @@ const Header = () => {
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-4'}`}>
       <div className="container-custom flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <img alt="SVN BAY PARCK Logo" src="/lovable-uploads/4ef0b4a4-efaf-44f0-b39c-cb57a9f92c3c.png" className="h-10 md:h-10 object-fill" />
+          <img alt="SVN BAY PARCK Logo" src="/lovable-uploads/4ef0b4a4-efaf-44f0-b39c-cb57a9f92c3c.png" className="h-12 md:h-12 object-fill" />
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
