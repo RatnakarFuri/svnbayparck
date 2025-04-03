@@ -94,7 +94,7 @@ const Home = () => {
           
           <div className="relative">
             <div className="rounded-lg overflow-hidden shadow-md">
-              <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800&auto=format&fit=crop&q=80" alt="SVN BAY PARCK Beachfront View" className="object-cover w-full aspect-[4/3]" />
+              <img alt="SVN BAY PARCK Beachfront View" className="object-cover w-full aspect-[4/3]" src="/lovable-uploads/01cbab13-33c9-47f4-aca9-03c2edde5628.jpg" />
             </div>
             <div className="absolute -bottom-4 -left-4 bg-primary text-white p-3 rounded-lg shadow-md">
               <p className="text-base font-medium">206</p>
