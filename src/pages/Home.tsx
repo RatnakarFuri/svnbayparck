@@ -233,7 +233,7 @@ const Home = () => {
               <img alt="Luxury Cottage Exterior" className="object-cover w-full h-full" src="/lovable-uploads/7ce3725f-2078-4769-ae6b-2432c9708d08.jpg" />
             </div>
             <div className="rounded-lg overflow-hidden shadow-sm mt-4">
-              <img alt="Luxury Cottage Interior" className="object-cover w-full h-full" src="/lovable-uploads/bd79b48c-93fe-4ee7-bb28-14b288dc4104.jpg" />
+              <img alt="Luxury Cottage Interior" className="object-cover w-full h-full" src="/lovable-uploads/21ca8de8-66fa-49b9-8a98-8c062cf29844.jpg" />
             </div>
             <div className="rounded-lg overflow-hidden shadow-sm">
               <img alt="Cottage View" className="object-cover w-full h-full" src="/lovable-uploads/f5f12fa3-907e-45e3-87de-cf0c386a03a5.jpg" />
